@@ -1,0 +1,22 @@
+requirejs.config({
+	baseUrl:"lib",
+	paths:{
+		shops:"shops",
+		menu:"menu",
+		router:'router',
+		conf:"conf",
+		underscore:"underscore",
+		jquery:"jquery",
+		getDatas:"getDataFromServer",
+		search:"search",
+		goTop:"goTop",
+		lunbo:'lunbo',
+	}
+});
+ require(['menu','shops',"router","search","goTop",'lunbo'],function(m,s,r,search,g,l){
+ 	m.display();
+ 	r.getdata();
+ 	g.goTop();
+ 	search.search();
+ 	l.play();
+ })

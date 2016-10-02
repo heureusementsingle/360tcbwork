@@ -1,0 +1,79 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.3
+3 info using node@v6.6.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'F:\\360\\myhttp\\myapp',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Auser\AppData\Roaming\npm-cache\evra\0.1.1\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\Auser\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle evra@0.1.1~prepublish: evra@0.1.1
+11 silly lifecycle evra@0.1.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\Auser\\AppData\\Roaming\\npm-cache\\evra\\0.1.1\\package.tgz',
+12 verbose tar pack   'F:\\360\\myhttp\\myapp' ]
+13 verbose tarball C:\Users\Auser\AppData\Roaming\npm-cache\evra\0.1.1\package.tgz
+14 verbose folder F:\360\myhttp\myapp
+15 verbose addLocalTarball adding from inside cache C:\Users\Auser\AppData\Roaming\npm-cache\evra\0.1.1\package.tgz
+16 verbose correctMkdir C:\Users\Auser\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd evra@0.1.1
+18 verbose afterAdd C:\Users\Auser\AppData\Roaming\npm-cache\evra\0.1.1\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\Auser\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\Auser\AppData\Roaming\npm-cache\evra\0.1.1\package\package.json written
+21 silly publish { name: 'evra',
+21 silly publish   version: '0.1.1',
+21 silly publish   description: 'tcb',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { start: 'node service.js' },
+21 silly publish   keywords: [ 'tcb' ],
+21 silly publish   author: { name: 'Eavra' },
+21 silly publish   license: 'ISC',
+21 silly publish   gitHead: '40d0c7905813ad1e96476eca4fbb6051601d17a9',
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'evra@0.1.1',
+21 silly publish   _shasum: 'e8a8436e8b88b3cc87077109ed48abf58e8c0915',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name evra
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'evra',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'evra',
+26 silly mapToRegistry   name: 'evra',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/evra
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\Auser\AppData\Roaming\npm-cache\evra\0.1.1\package.tgz
+30 verbose stack Error: auth required for publishing
+30 verbose stack     at CachingRegistryClient.publish (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\publish.js:30:14)
+30 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\publish.js:138:14
+30 verbose stack     at mapToRegistry (C:\Program Files\nodejs\node_modules\npm\lib\utils\map-to-registry.js:62:3)
+30 verbose stack     at publish_ (C:\Program Files\nodejs\node_modules\npm\lib\publish.js:107:3)
+30 verbose stack     at Array.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+30 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+30 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:14:28)
+30 verbose stack     at chain (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+30 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\publish.js:73:5
+30 verbose stack     at RES (C:\Program Files\nodejs\node_modules\npm\node_modules\inflight\inflight.js:23:14)
+31 verbose cwd F:\360\myhttp\myapp
+32 error Windows_NT 6.1.7601
+33 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+34 error node v6.6.0
+35 error npm  v3.10.3
+36 error code ENEEDAUTH
+37 error need auth auth required for publishing
+38 error need auth You need to authorize this machine using `npm adduser`
+39 verbose exit [ 1, true ]

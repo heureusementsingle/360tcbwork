@@ -1,0 +1,14 @@
+{
+  "name": "evra",
+  "version": "0.1.1",
+  "description": "tcb",
+  "main": "index.js",
+  "scripts": {
+    "start": "node service.js"
+  },
+  "keywords": [
+    "tcb"
+  ],
+  "author": "Eavra",
+  "license": "ISC"
+}

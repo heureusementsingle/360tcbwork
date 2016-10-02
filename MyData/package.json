@@ -1,0 +1,17 @@
+{
+  "name": "evra",
+  "version": "0.1.1",
+  "description": "tcb",
+  "main": "service",
+  "scripts": {
+    "start": "node service.js"
+  },
+  "keywords": [
+    "tcb"
+  ],
+  "author": "Evra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
